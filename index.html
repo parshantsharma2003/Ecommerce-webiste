@@ -880,7 +880,7 @@ body {
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">Nexus<span>Store</span></a>
+                <a href="index.html">Pandit Ji<span>Store</span></a>
             </div>
             <nav class="navbar">
                 <ul class="nav-menu">
@@ -1027,7 +1027,7 @@ body {
         <div class="cart-footer">
             <div class="cart-total">
                 <span>Total:</span>
-                <span class="total-price">$0.00</span>
+                <span class="total-price">₹0.00</span>
             </div>
             <button class="btn checkout-btn">Checkout</button>
         </div>
@@ -1078,7 +1078,7 @@ body {
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Pandit Ji Store. All rights reserved.</p>
+                <p>&copy; 2026 Pandit Ji Store. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1192,7 +1192,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCart();
     
     // Load cart from localStorage if available
-    const savedCart = localStorage.getItem('nexusCart');
+    const savedCart = localStorage.getItem('panditCart');
     if (savedCart) {
         cart = JSON.parse(savedCart);
         updateCart();
@@ -1298,7 +1298,7 @@ function addToCart(e) {
     showNotification(`${product.name} added to cart!`);
     
     // Save cart to localStorage
-    localStorage.setItem('nexusCart', JSON.stringify(cart));
+    localStorage.setItem('panditCart', JSON.stringify(cart));
 }
 
 // Update cart UI
@@ -1385,7 +1385,7 @@ function decreaseQuantity(e) {
     }
     
     updateCart();
-    localStorage.setItem('nexusCart', JSON.stringify(cart));
+    localStorage.setItem('panditCart', JSON.stringify(cart));
 }
 
 // Increase item quantity
@@ -1396,7 +1396,7 @@ function increaseQuantity(e) {
     cartItem.quantity += 1;
     
     updateCart();
-    localStorage.setItem('nexusCart', JSON.stringify(cart));
+    localStorage.setItem('panditCart', JSON.stringify(cart));
 }
 
 // Remove item from cart
@@ -1405,7 +1405,7 @@ function removeFromCart(e) {
     cart = cart.filter(item => item.id !== productId);
     
     updateCart();
-    localStorage.setItem('nexusCart', JSON.stringify(cart));
+    localStorage.setItem('panditCart', JSON.stringify(cart));
     
     showNotification('Item removed from cart');
 }
