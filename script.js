@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCart();
     
     // Load cart from localStorage if available
-    const savedCart = localStorage.getItem('nexusCart');
+    const savedCart = localStorage.getItem('panditCart');
     if (savedCart) {
         cart = JSON.parse(savedCart);
         updateCart();
@@ -211,7 +211,7 @@ function addToCart(e) {
     showNotification(`${product.name} added to cart!`);
     
     // Save cart to localStorage
-    localStorage.setItem('nexusCart', JSON.stringify(cart));
+    localStorage.setItem('panditCart', JSON.stringify(cart));
 }
 
 // Update cart UI
@@ -298,7 +298,7 @@ function decreaseQuantity(e) {
     }
     
     updateCart();
-    localStorage.setItem('nexusCart', JSON.stringify(cart));
+    localStorage.setItem('panditCart', JSON.stringify(cart));
 }
 
 // Increase item quantity
@@ -309,7 +309,7 @@ function increaseQuantity(e) {
     cartItem.quantity += 1;
     
     updateCart();
-    localStorage.setItem('nexusCart', JSON.stringify(cart));
+    localStorage.setItem('panditCart', JSON.stringify(cart));
 }
 
 // Remove item from cart
@@ -318,7 +318,7 @@ function removeFromCart(e) {
     cart = cart.filter(item => item.id !== productId);
     
     updateCart();
-    localStorage.setItem('nexusCart', JSON.stringify(cart));
+    localStorage.setItem('panditCart', JSON.stringify(cart));
     
     showNotification('Item removed from cart');
 }
