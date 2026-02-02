@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusStore - Premium E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Nexus<span>Store</span></a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                    <a href="#" class="user-btn"><i class="fas fa-user"></i></a>
+                    <div class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <button class="search-submit"><i class="fas fa-search"></i></button>
+            <span class="close-search">&times;</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Style</h1>
+                <p>Discover premium products curated for the modern lifestyle. Quality meets design in every item.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Modern shopping experience">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Electronics">
+                    <div class="category-content">
+                        <h3>Electronics</h3>
+                        <p>Latest gadgets & devices</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fashion">
+                    <div class="category-content">
+                        <h3>Fashion</h3>
+                        <p>Trendy clothing & accessories</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Home & Living">
+                    <div class="category-content">
+                        <h3>Home & Living</h3>
+                        <p>Furniture & decor items</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Beauty">
+                    <div class="category-content">
+                        <h3>Beauty</h3>
+                        <p>Skincare & cosmetics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="home">Home</button>
+            </div>
+            <div class="products-grid">
+                <!-- Products will be loaded dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About NexusStore</h2>
+                <p>Welcome to NexusStore, your premier destination for high-quality products across multiple categories. We're committed to providing an exceptional shopping experience with carefully curated items that blend style, functionality, and value.</p>
+                <p>Our mission is to connect customers with products that enhance their lives. Every item in our collection is selected for its quality, design, and positive impact on your daily routine.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>5000+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>200+</h3>
+                        <p>Brand Partners</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Customer Support</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&format&fit=crop&w=1170&q=80" alt="About NexusStore">
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added dynamically -->
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="btn checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>NexusStore</h3>
+                    <p>Your trusted online destination for premium products across all categories. Quality, style, and reliability in one place.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Commerce Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> support@nexusstore.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 NexusStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+</body>
+</html>
